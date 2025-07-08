@@ -1,61 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema de Gestão Escolar - Laravel & PHP
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este é um projeto pessoal desenvolvido com Laravel 9 e PHP 8 para gerenciamento básico de alunos, turmas, e documentos escolares, com foco em segurança e organização.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Visão Geral
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O sistema permite cadastrar, editar e visualizar informações dos alunos e suas turmas, além de armazenar e proteger documentos e fotos pessoais de forma privada, acessíveis somente a usuários autenticados.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este projeto demonstra conhecimento prático em desenvolvimento backend com Laravel, manipulação de arquivos, controle de acesso e boas práticas de segurança.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠 Tecnologias Utilizadas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- PHP 8
+- Laravel 9
+- Composer
+- Blade (template engine do Laravel)
+- Bootstrap 5 (para interface básica e responsiva)
+- MySQL (banco de dados relacional)
+- Git (controle de versão)
+- Docker
+- Nginx (servidor web em ambiente Docker)
+  
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📋 Funcionalidades Principais
 
-## Laravel Sponsors
+- Cadastro, edição e listagem de alunos e turmas com relacionamentos via Eloquent ORM
+- Upload e armazenamento seguro de fotos e documentos dos alunos em armazenamento privado
+- Rotas protegidas por autenticação (middleware `auth`) para acesso restrito a dados sensíveis
+- Exibição dinâmica e segura das fotos dos alunos via controller dedicado, impedindo acesso público direto
+- Interface simples e responsiva para facilitar o uso por professores e administradores
+- Estrutura organizada de código seguindo padrões MVC do Laravel
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🔒 Segurança e Boas Práticas
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Utilização do sistema de autenticação padrão do Laravel para proteger rotas e dados
+- Armazenamento de arquivos sensíveis em pastas não acessíveis publicamente (`storage/app/alunos`)
+- Controle rigoroso de acesso via middleware e verificação de existência dos arquivos antes de servir conteúdo
+- Código modularizado e limpo para facilitar manutenção e futuras extensões
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 💡 Aprendizados e Desafios
 
-## Code of Conduct
+Este projeto foi uma oportunidade para consolidar conhecimentos em:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Desenvolvimento web com Laravel e PHP moderno
+- Manipulação segura de arquivos no filesystem do Laravel
+- Criação de rotas, controllers e middleware para proteção e organização
+- Integração entre backend e frontend com Blade e Bootstrap
+- Estruturação de um sistema funcional com foco na segurança e usabilidade
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Contato
 
-## License
+Gabriel Gomes dos Santos  
+[Seu LinkedIn] | [Seu GitHub] | [Seu E-mail]
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## Considerações Finais
+
+Este projeto é um excelente exemplo de desenvolvimento web com Laravel, focando em funcionalidades essenciais para um sistema escolar, além de destacar práticas importantes para segurança e organização do código. Estou aberto a expandi-lo, refatorá-lo e melhorar conforme as necessidades do mercado.
+
+---
