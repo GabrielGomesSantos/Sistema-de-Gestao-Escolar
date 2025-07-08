@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  diario_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: diario_app
+    working_dir: /var/www/diario
+    volumes:
+      - ./:/var/www/diario
+    networks:
+      - escola-net
+
+networks:
+  escola-net:
+    external: true
