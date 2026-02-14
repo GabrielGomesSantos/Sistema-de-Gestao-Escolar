@@ -58,13 +58,6 @@ Este projeto foi uma oportunidade para consolidar conhecimentos em:
 
 ---
 
-## Contato
-
-Gabriel Gomes dos Santos  
-[Seu LinkedIn] | [Seu GitHub] | [Seu E-mail]
-
----
-
 ## Considerações Finais
 
 Este projeto é um excelente exemplo de desenvolvimento web com Laravel, focando em funcionalidades essenciais para um sistema escolar, além de destacar práticas importantes para segurança e organização do código. Estou aberto a expandi-lo, refatorá-lo e melhorar conforme as necessidades do mercado.
